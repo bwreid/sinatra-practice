@@ -1,0 +1,14 @@
+<% @rows.each do |dog| %>
+<section>
+  <p><%= dog['name'] %> - <%= dog['breed'] %></p>
+  <img class='crop' src='<%= dog['photo'] %>'>
+
+    <button><a href='/dogs/<%= dog['id'] %>/edit'>Edit</a></button>
+
+  <form action='/dogs/<%= dog['id'] %>/delete' method='post'>
+    <input type='hidden' value='<%= dog['id'] %>' name='id'>
+    <button>Remove</button>
+  </form>
+  <div class='buffer' style='clear: both;'></div>
+</section>
+<% end %>

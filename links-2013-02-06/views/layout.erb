@@ -1,0 +1,22 @@
+<!DOCTYPE <html>
+<head>
+  <html lang='en'>
+  <meta charset='utf-8'>
+  <title>Links</title>
+  <link rel='stylesheet' type='text/css' href='/normalize.css'>
+  <link rel='stylesheet' type='text/css' href='/style.css'>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href='/politics'>Politics</a></li>
+      <li><a href='/local'>Local</a></li>
+      <li><a href='/international'>International</a></li>
+      <li><a href='/weather'>Weather</a></li>
+      <li><a href='/contact'>Contact</a></li>
+    </ul>
+  </nav>
+  <h1><%= params[:name].capitalize if params[:name].present? %></h1>
+  <%= yield %>
+</body>
+</html>

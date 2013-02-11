@@ -1,0 +1,9 @@
+<form action='/' method='get'>
+<button>Check</button>
+<input type='text' name='quote' autofocus>
+</form>
+
+<div id='result'>
+  <h2><%= "#{@stock} at $#{@quote.round(2)}" if @stock.present? %></h2>
+</div>
+<div style='clear: both;'></div>

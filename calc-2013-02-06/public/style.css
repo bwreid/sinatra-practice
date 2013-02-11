@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Rufina);
+
+body {
+    background: url(http://subtlepatterns.com/patterns/pw_maze_white.png) repeat;
+    font: 14px/16px 'Rufina', sans-serif;
+}
+
+#container {
+    width: 940px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+}
+
+form {
+    position: relative;
+}
+
+input {
+    border: 0;
+    padding: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 1.3em;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #aaa;
+    border: solid 1px #ccc;
+    margin: 0 0 20px;
+    width: 30%;
+}
+
+input:focus {
+    background-color: rgba(0,0,255,0.1);
+}
+
+button {
+    border: solid 1px #ccc;
+    padding: 15px 30px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+#main {
+    text-align: center;
+    font-size: 3em;
+    line-height: 2em;
+}
+
+#main h2 {
+    background-color: blue;
+    color: white;
+    display: block;
+    height: 100px;
+    margin: 0 20%
+}
+
+#main h2:last-child {
+    background-color: red;
+}
+
+#main h2:hover {
+    background-color: white;
+    color: blue;
+    display: block;
+    height: 100px;
+    margin: 20px;
+}
+
+#main h2:hover:last-child {
+    color: red;
+}

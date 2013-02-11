@@ -1,0 +1,21 @@
+nav {
+  background: #222;
+}
+
+nav ul {
+  margin: 0 auto;
+}
+
+nav li {
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}

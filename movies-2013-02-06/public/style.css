@@ -1,0 +1,104 @@
+body {
+    background: url(http://upload.wikimedia.org/wikipedia/commons/f/fa/Popcorn.jpg) no-repeat center fixed;
+}
+
+nav {
+    background: #222;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+input {
+    border: 0;
+    padding: 10px;
+    font-size: 1.3em;
+    font-family: Arial, sans-serif;
+    color: #aaa;
+    border: solid 1px #ccc;
+    width: 300px;
+}
+
+button {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#aaa));
+    background-image: -webkit-linear-gradient(top, #ddd, #aaa);
+    background-image: -moz-linear-gradient(top, #ddd, #aaa);
+    background-image: -ms-linear-gradient(top, #ddd, #aaa);
+    background-image: -o-linear-gradient(top, #ddd, #aaa);
+    background-image: linear-gradient(top, #ddd, #aaa);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#aaa',GradientType=0 );
+ /* IE6-9 */
+    border: solid 1px #ccc;
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+#container {
+    width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.movie {
+    padding: 0px;
+}
+
+section {
+    float: left;
+    height: auto;
+    width: 66%;
+    padding: 0 1%;
+    background: #fff;
+    opacity: 0.7;
+}
+
+aside {
+    float: right;
+    width: 32%;
+}
+
+img.poster {
+    border: 9px solid #fff;
+    border-radius: 3px;
+}
+
+#poster-wrapper {
+    width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+#poster-wrapper.img {
+    float: left;
+}
+
+#poster-wrapper.img:nth-child(4n):after {
+    content: '<br/>';
+}

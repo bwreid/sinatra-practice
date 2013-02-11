@@ -1,0 +1,35 @@
+<% if $username.length == 0 %>
+  <div class="row">
+    <div class="span12">
+      <form method='post' action='login'>
+        <legend>Enter your Username Here</legend>
+        <input class='span10' name='user' type='text' autofocus>
+        <button type='submit' class='pull-right btn btn-large'>Submit</button>
+      </form>
+    </div>
+  </div>
+<% end %>
+
+<% if ($username.length != 0) && ($username != "") %>
+  <div class="row">
+    <div class="span12">
+      <form method='post' action='create'>
+        <legend>Hello, <%= $username %>. You have <span class="badge badge-important"><%= @count %></span> tasks left.</legend>
+        <input class='span10' name='newtask' type='text' autofocus>
+        <button type='submit' class='pull-right btn btn-large'>New Task</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="row item">
+      <% @tasks.each do |item| %>
+      <div class="span12">
+      <form method='post' action='destroy'>
+        <h1 class="pull-left"><%= item.gsub("*&","'").titleize %></h1>
+        <input type="hidden" name="destroy" value="<%= item.gsub("*&","'") %>">
+        <button class="pull-right btn btn-danger btn-large">Done!</button>
+      </form>
+      </div>
+      <% end %>
+  </div>
+<% end %>

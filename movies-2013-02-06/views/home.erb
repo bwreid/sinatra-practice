@@ -1,0 +1,14 @@
+<header>
+<form action='/search' method='post'>
+  <input type='text' name='movie' autofocus>
+  <button>Find!</button>
+</form>
+</header>
+
+<div id="container">
+  <section>
+    <%= @movie %>
+  </section>
+</div>
+
+<aside><%= "<img class='poster' src='#{@poster}'/>" if @poster != nil %></aside>

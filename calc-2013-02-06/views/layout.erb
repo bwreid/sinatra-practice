@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+    <meta charset='utf-8'>
+    <title>Calculator</title>
+    <link rel='stylesheet' href='/style.css'> <!--THE PUBLIC DIRECTORY IS CONSIDERED '/'-->
+  </head>
+    <body>
+      <div id='container'>
+        <div id='main'>
+          <%= yield %>
+          <!--Here's the Ruby code; it yields to whatever is called.
+              If you don't call the =, it will calculate it but will
+              not print anything out. -->
+        </div>
+      </div>
+    </body>
+</html>

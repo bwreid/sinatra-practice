@@ -1,0 +1,11 @@
+<header>
+<form action='/search' method='post'>
+  <input type='text' name='movie' autofocus>
+  <button>Find!</button>
+</form>
+</header>
+<div id="#poster-wrapper">
+<% @poster.each do |row| %>
+<img src='<%= "#{row}" %>'>
+<% end %>
+</div>

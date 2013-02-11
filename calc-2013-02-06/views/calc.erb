@@ -1,0 +1,20 @@
+<h1>THE WORLD'S GREATEST CALCULATOR</h1>
+
+<form action='/calc' method='get'>
+  <!--Methods are the verbs. Action is what will happen; in this it'll just go back to the page-->
+  <input type='number' name='first'>
+  <input type='select' placeholder='(+ - * /)' name='operator'>
+  <input type='number' name='second'>
+  <button>Calculate!</button>
+</form>
+
+<hr>
+
+<section><h2><%= params[:first] %></h2>
+  <p><%= 'multiplied by' if @operator == '*' %>
+  <p><%= 'plus' if @operator == '+' %>
+  <p><%= 'minus' if @operator == '-' %>
+  <p><%= 'divided by' if @operator == '/' %>
+<h2><%= params[:second] %></h2>
+<p>equals</p>
+<h2><%= @result.to_f.round(2) %></h2></section>

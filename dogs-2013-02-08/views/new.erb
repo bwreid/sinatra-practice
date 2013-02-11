@@ -1,0 +1,8 @@
+<div class='form'>
+  <form method='post' action='<%= @row.nil? ? "create" : "/dogs/#{@row['id']}" %>'>
+    <input value='<%= @row['name'] if @row %>' type='text' placeholder='name' onfocus="this.placeholder = ''" name='name'>
+    <input value='<%= @row['photo'] if @row %>' type='text' placeholder='photo url' onfocus="this.placeholder = ''" name='photo'>
+    <input value='<%= @row['breed'] if @row %>' type='text' placeholder='breed' onfocus="this.placeholder = ''" name='breed'>
+    <button><%= @row.nil? ? "Bow wow" : "Edit Dog" %></button>
+  </form>
+</div>
